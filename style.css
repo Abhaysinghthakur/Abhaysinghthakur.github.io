@@ -38,7 +38,7 @@ body {
 }
 
 
-.image{
+.container .card .image{
 	border-color: black;
 	border-width: 20px;
 	width: 25vw;
@@ -128,6 +128,7 @@ body {
 	margin : 10px;
 	border-radius: 10px;
 	align-self: center;
+	justify-content: space-around;
 	transition: width height 0.3s linear 0.1s;
 }
 
@@ -200,4 +201,46 @@ body {
 {
 	height: 6vw;
 	width:6vw;
+}
+
+@media only screen and (max-width: 720px) and (min-width: 441px){
+
+	.container .card {
+		flex-direction: column;
+	}
+
+	.container .card .heading{
+		font-size: 3rem;
+		margin-left: 12vw;
+	}
+
+	.container .card .image{
+		width: 60vw;
+		margin-left: 6vw;
+	}
+
+	.contain .items .inneritem{
+		width: 40%;
+	}
+}
+
+@media only screen and (max-width: 440px){
+
+	.container .card {
+		flex-direction: column;
+	}
+
+	.container .card .heading{
+		font-size: 2rem;
+		margin-left: 12vw;
+	}
+
+	.container .card .image{
+		width: 60vw;
+		margin-left: 6vw;
+	}
+
+	.contain .items .inneritem{
+		width: 70%;
+	}
 }
