@@ -206,6 +206,11 @@ body {
 
 @media only screen and (max-width: 720px) and (min-width: 441px){
 
+
+	:root {
+		font-size: 14px;
+	}
+
 	.container .card {
 		flex-direction: column;
 	}
@@ -226,6 +231,10 @@ body {
 }
 
 @media only screen and (max-width: 440px){
+
+	:root{
+		font-size: 12px;
+	}
 
 	.container .card {
 		flex-direction: column;
